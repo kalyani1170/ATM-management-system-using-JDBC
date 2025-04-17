@@ -1,0 +1,31 @@
+mysql> CREATE DATABASE atm_system;
+Query OK, 1 row affected (0.10 sec)
+
+mysql> USE atm_system;
+Database changed
+mysql>
+mysql> CREATE TABLE user_accounts (
+    ->     user_id VARCHAR(50) PRIMARY KEY,
+    ->     pin VARCHAR(10),
+    ->     balance DOUBLE
+    -> );
+Query OK, 0 rows affected (0.09 sec)
+
+mysql>
+mysql> INSERT INTO user_accounts (user_id, pin, balance) VALUES ('user1', '1234', 5000);
+Query OK, 1 row affected (0.02 sec)
+
+mysql> INSERT INTO user_accounts (user_id, pin, balance) VALUES ('user2', '5678', 3000);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> select * from user_accounts
+    -> select * from user_accounts;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select * from user_accounts' at line 2
+mysql> SELECT * FROM user_accounts;
++---------+------+---------+
+| user_id | pin  | balance |
++---------+------+---------+
+| user1   | 1234 |    5000 |
+| user2   | 5678 |    3000 |
++---------+------+---------+
+2 rows in set (0.01 sec)
