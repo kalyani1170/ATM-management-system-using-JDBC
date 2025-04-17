@@ -1,0 +1,43 @@
+>> java ATMManagementSystem
+>> 
+Welcome to the ATM Management System
+Enter user ID: user1
+Enter your PIN: 1234
+
+ATM Operations:
+1. Check Balance
+2. Withdraw Cash
+3. Fund Transfer
+4. Exit
+Choose an option: 1
+Your current balance is: 5000.0
+
+ATM Operations:
+1. Check Balance
+2. Withdraw Cash
+3. Fund Transfer
+4. Exit
+Choose an option: 2
+Enter amount to withdraw: 2000
+Transaction successful. Your new balance is: 3000.0
+
+ATM Operations:
+1. Check Balance
+2. Withdraw Cash
+3. Fund Transfer
+4. Exit
+Choose an option: 3
+Enter recipient User ID: user2
+Enter amount to transfer: 500
+Transfer successful. Your new balance is: 2500.0
+
+ATM Operations:
+1. Check Balance
+2. Withdraw Cash
+3. Fund Transfer
+4. Exit
+Choose an option: 4
+Thank you for using the ATM.
+
+
+
